@@ -14,22 +14,19 @@
     rel="stylesheet" />
 </head>
 <body>
-    <div class="menu">
+    <div class="fixos topo">
         <img src="logo.png">
-        <ion-icon name="people-sharp"></ion-icon>
+        <ion-icon class="icon-topo" name="people-sharp"></ion-icon>
     </div>
-    <main>
-        <ul class="mensagens-container">
-        </ul>
-    </main>
-    <footer>
-        <div class="entrada-mensagem">
-          <input type="text" placeholder="Escreva aqui..." class="input-mensagem"></input>
-        </div>
-        <button onclick="enviarMensagem()">
-          <ion-icon class="icon-footer" name="paper-plane-outline"></ion-icon>
-        </button>
-      </footer>
+    <div class="containerMensagens"></div>
+   <div class="fixos rodape">
+    <div class="fixos rodape">
+        <input id="myInput" type="text" placeholder="Escreva aqui...">
+        <ion-icon id="myButton" class= "icon" name="paper-plane-outline" onclick="enviarmensagem()"></ion-icon>
+    </div>
+   </div>
+      
+     
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts.js"></script>
